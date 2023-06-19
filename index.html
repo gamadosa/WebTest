@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>맨체스터 시티 팬 페이지</title>
   <link rel="stylesheet" href="./css/mystyle.css">
-  <style> </style>
+  <script src="./js/test.js"></script>
 </head>
 <body>
   <svg height="120" width="100%">
@@ -21,7 +21,9 @@
     <rect fill="url(#grad1)" x="0" y="0" width="100%" height="120" />
     <text fill="#FFFFFF" font-size="60" font-family="Verdana" x="50" y="80">맨체스터 시티 팬 페이지</text>  
   </svg>
-    
+
+<div id="section">
+<nav>
   <ul>
     <li><a class="active" href="https://gamadosa.github.io/">홈</a></li>
     <li><a href="./html/about.html">소개</a></li>
@@ -36,21 +38,29 @@
       </div>
     </li>
   </ul>
+</nav>
+  
+  <h1>맨체스터 시티 팬 페이지에 오신 것을 환영합니다</h1>
+  <a href="https://kr.mancity.com/" target="_blank">
+  <img src="./image/logo.svg" width="500" alt="로고">
+  </a>
 
-
-    <img src="./image/logo.svg" width="200" alt="로고">
-    <h1>맨체스터 시티 팬 페이지에 오신 것을 환영합니다</h1>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Gv3jkURLMA" title="YouTube video player"
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7Gv3jkURLMA" title="YouTube video player"
+   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
    
-  <footer>
+
+  </div>
+
+  <button onclick="scrollToTop()" id="scrollToTopButton">
+    <img src="./image/arrow.png" alt="위">
+  </button>
+<footer>
     <p>추가문의</p>
     <address>
     전화 : 010-6524-6508 <br>
     메일 : park980728@gmail.com
     </address>
     <p>© 2023 Manchester City Fan Page. All rights reserved.</p>
-  </footer>
+</footer>
 </body>
 </html>

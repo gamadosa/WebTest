@@ -5,7 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>맨체스터 시티 팬 페이지</title>
   <link rel="stylesheet" href="../css/mystyle.css">
-  <style> </style>
+  <script src="../js/test.js"></script>
+  <style>
+ 
+    h1 {
+      color: #0070c0;
+      font-size: 50px;
+    }   
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 23px;
+    }
+   
+   th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #0070c0;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <svg height="120" width="100%">
@@ -21,7 +45,8 @@
     <rect fill="url(#grad1)" x="0" y="0" width="100%" height="120" />
     <text fill="#FFFFFF" font-size="60" font-family="Verdana" x="50" y="80">맨체스터 시티 팬 페이지</text>  
   </svg>
-    
+  <div id="section">
+<nav>
   <ul>
     <li><a href="https://gamadosa.github.io/">홈</a></li>
     <li><a href="./about.html">소개</a></li>
@@ -36,18 +61,60 @@
       </div>
     </li>
   </ul>
-
+</nav>
 
     <img src="../image/logo.svg" width="200" alt="로고">
-    <h1>수상내역</h1>
+    <h1>수상내역</h1>  
 
-  <footer>
-    <p>추가문의</p>
-    <address>
-    전화 : 010-6524-6508 <br>
-    메일 : park980728@gmail.com
-    </address>
-    <p>© 2023 Manchester City Fan Page. All rights reserved.</p>
-  </footer>
+      <table>        
+        <thead>
+          <tr>
+            <th>대회</th>
+            <th>우승 횟수</th>
+            <th>연도</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>프리미어 리그</td>
+            <td>9회</td>
+            <td>1936-37, 1967-68, 2011-12, 2013-14, 2017-18, 2018-19, 2020-21, 2021-22, <b>2022-23</b></td>
+          </tr>
+          <tr>
+            <td>UEFA 챔피언스 리그</td>
+            <td>1회</td>
+            <td><b>2022-2023</b></td>
+          </tr>
+          <tr>
+            <td>FA컵</td>
+            <td>7회</td>
+            <td>1903-1904, 1933-1934, 1955-1956, 1968-1969, 2010-2011, 2018-2019, <b>2022-23</b></td>
+          </tr>
+          <tr>
+            <td>EFL 챔피언십</td>
+            <td>7회</td>
+            <td>1898-99, 1902-03, 1909-10, 1927-28, 1946-47, 1965-66, 2001-02</td>
+          </tr>          
+          <tr>
+            <td>리그컵</td>
+            <td>8회</td>
+            <td>1969-1970, 1975-1976, 2013-2014, 2015-2016, 2017-2018, 2018-2019, 2019-2020, 2020-21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopButton">
+        <img src="../image/arrow.png" alt="위">
+    </button>
+    
+    <footer>
+        <p>추가문의</p>
+        <address>
+        전화 : 010-6524-6508 <br>
+        메일 : park980728@gmail.com
+        </address>
+        <p>© 2023 Manchester City Fan Page. All rights reserved.</p>
+    </footer>
 </body>
 </html>

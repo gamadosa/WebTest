@@ -7,7 +7,7 @@ ul {
      overflow: visible; 은 오버클로우되는 콘텐츠를 잘라내지 않고 
      영역 범위 밖까지 콘텐츠를 출력함
      overflow: hidden은 오버클로우되는 콘텐츠를 잘라냄. */
-  background-color: #333;
+  background-color: #555;
   position: sticky;
   top:0px;
   /* position: sticky는 미리 정의한 위치에 도달하기 전에는 
@@ -17,7 +17,8 @@ ul {
      ul 요소는 뷰포트의 상단 0px 위치에 도달하면 sticky가 됨. 
      sticky는 화면에 마치 붙여놓은 것처럼 위치가 고정되는 것을 의미  
      스크롤 할 때 다른 요소는 함께 스크롤되지만 
-     ul요소는 상단 0px 위치에 고정되어 움직이지 않음.  */
+     ul요소는 상단 0px 위치에 고정되어 움직이지 않음.  */     
+     font-weight: bold;
 }
 
 li {
@@ -30,6 +31,7 @@ li {
      inline-block은 줄바꿈이 일어나지 않음
      따라서 li항목 출력 후 줄바꿈 없이 다음 li 항목이 가로방향으로 출력됨                           
      */
+     
 }
 
 li a, .dropbtn {
@@ -42,14 +44,15 @@ li a, .dropbtn {
      결과적으로 width, height, padding, margin 적용 가능함. 
      하지만 display: block 요소처럼 줄바꿈은 발생하지 않음.   
   */
-  padding: 14px 16px;
+  padding: 14px 16px;  
   color: white;
   text-align: center;
   text-decoration: none;
+  
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: lightskyblue;
 }
 /*     
 li.dropdown {
@@ -112,8 +115,22 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #555; color: #FFF;}
 
 .dropdown:hover .dropdown-content {
   display: block; /* 마우스 오버시 드롭다운 메뉴가 보이도록 설정 */
+}
+
+.active {  
+  background-color: lightskyblue;
+  color: black;
+  
+}
+footer{
+  margin:0 auto;				
+  padding:10px;					
+  font-size:9px;					
+  background-color: #555;			
+  color:white;					
+  border:2px solid black;			
 }

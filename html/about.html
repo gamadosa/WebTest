@@ -6,6 +6,45 @@
   <title>맨체스터 시티 팬 페이지</title>
   <link rel="stylesheet" href="../css/mystyle.css">
   <script src="../js/test.js"></script>
+  <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+table .color {
+  background-color: #4CAF50;
+  color: white;
+}
+.button-container {
+  padding: 50px;
+  text-align: center;
+}
+.button {
+  padding: 10px 10px;
+  border-radius: 30% 0% 30% 0%;
+  background-color: skyblue;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}    
+.button.clicked {
+  background-color: darkblue;
+  box-shadow: 2px 2px black;
+  color: white;
+  border: 1px solid gray;
+}
+.index{display: none;}
+#index1{display: block;}
+</style>
 </head>
 <body>
   <svg height="120" width="100%">
@@ -38,9 +77,53 @@
     </li>
   </ul>
 </nav>
+ 
+<div id="index1" class="index">
+  <h1>구단 소개</h1>
+  <table>
+    <tr>
+        <th class="color">항목</th>
+        <th class="color">내용</th>
+        <th rowspan="10"><img src="../image/treble.webp" width="400" alt="트레블"></th>
+    </tr>
+    <tr>
+        <td>구단 창설</td>
+        <td>1880년</td>        
+    </tr>
+    <tr>
+        <td>연고지</td>
+        <td>맨체스터</td>
+    </tr>
+    <tr>
+        <td>홈 구장</td>
+        <td>에티하드 스타디움 (Ethihad Stadium)</td>
+    </tr>
+    <tr>
+        <td>감독</td>
+        <td>펩 과르디올라</td>
+    </tr>
+    <tr>
+        <td>주장</td>
+        <td>일카이 귄도안</td>
+    </tr>
+    <tr>
+      <td>구단주</td>
+      <td>만수르 빈 자이드 알나얀</td>
+  </tr>
+</table>
+</div>
+<div id="index2" class="index">
+  <h1>2</h1>
+</div>
+<div id="index3" class="index">
+  <h1>3</h1>
+</div>
+<div class="button-container">
+  <button id="button1" class="button" onclick="buttonClick(1)">구단 소개</button>
+  <button id="button2" class="button" onclick="buttonClick(2)">2</button>
+  <button id="button3"class="button" onclick="buttonClick(3)">3</button>
+</div>
 
-  <img src="../image/logo.svg" width="200" alt="로고">
-  <h1>소개</h1>
 
 
 </div> 

@@ -6,6 +6,50 @@
   <title>맨체스터 시티 팬 페이지</title>
   <link rel="stylesheet" href="../css/mystyle.css">
   <script src="../js/test.js"></script>
+  <style>
+  .button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+}
+.position{
+  padding: 10px;
+  color: skyblue;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px black;
+}
+.playerBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+.playerBtn:hover{
+  background-color: navy;
+  color: white;
+}
+.btnImg {
+  width: 200px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;  
+}
+.playerText{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 800;
+}
+  .hr-container {
+  padding: 70px 0 10px 0;
+  }
+  </style>
 </head>
 <body>
   <svg height="120" width="100%">
@@ -39,9 +83,141 @@
     </li>
   </ul>
 </nav>
+   
+    
 
-    <img src="../image/logo.svg" width="200" alt="로고">
-    <h1>선수</h1>
+
+    <h1 class="position">골키퍼</h1>
+    <div class="button-container">
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/goalkeeper/ederson.webp" alt="에데르송">        
+        <p class="playerText">31. 에데르송</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/goalkeeper/stefan-ortega-morenp.webp" alt="오르테가">        
+        <p class="playerText">18. 오르테가</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/goalkeeper/scott-carson.webp" alt="스콧카슨">        
+        <p class="playerText">18. 스콧 카슨</p>
+      </button>
+    </div>
+    <div class="hr-container">
+      <hr>
+    </div>
+
+    <h1 class="position">수비수</h1>
+    <div class="button-container">
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/manuel-akanji.webp" alt="아칸지">        
+        <p class="playerText">25. 마누엘 아칸지</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/nathan-ake.webp" alt="아케">        
+        <p class="playerText">6. 네이션 아케</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/ruben-dias.webp" alt="디아스">        
+        <p class="playerText">3. 후벵 디아스</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/sergio-gomez.webp" alt="고메스">        
+        <p class="playerText">21. 세르히오 고메스</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/aymeric-laporte.webp" alt="라포르트">        
+        <p class="playerText">14. 아이메릭 라포르트</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/rico-lewis.webp" alt="루이스">        
+        <p class="playerText">82. 리코 루이스</p>        
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/john-stones.webp" alt="스톤스">        
+        <p class="playerText">5. 존 스톤스</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Defender/kyle-walker.webp" alt="워커">        
+        <p class="playerText">2. 카일 워커</p>
+      </button>
+    </div>
+    <div class="hr-container">
+      <hr>
+    </div>
+
+    <h1 class="position">미드필더</h1>
+    <div class="button-container">
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/kevin-de-bruyne.webp" alt="덕배">        
+        <p class="playerText">17. 케빈 데 브라위너</p>
+      </button>  
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/phil-foden.webp" alt="포든">        
+        <p class="playerText">47. 필 포든</p>
+      </button> 
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/jack-grealish.webp" alt="그릴리쉬">        
+        <p class="playerText">10. 잭 그릴리쉬</p>
+      </button> 
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/ilkay-gundogan.webp" alt="귄도안">        
+        <p class="playerText">8. 일카이 귄도안</p>
+      </button>     
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/rodrigo.webp" alt="로드리">        
+        <p class="playerText">16. 로드리</p>
+      </button> 
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/cole-palmer.webp" alt="팔머">        
+        <p class="playerText">80. 콜 팔머</p>
+      </button> 
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/maximo-perrone.webp" alt="페로네">        
+        <p class="playerText">32. 막시모 페로네</p>
+      </button> 
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/kalvin-philips.webp" alt="필립스">        
+        <p class="playerText">4. 칼빈 필립스</p>
+      </button> 
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/midfielder/bernardo-silva.webp" alt="베실바">        
+        <p class="playerText">20. 베르나르도 실바</p>
+      </button> 
+    </div>
+    <div class="hr-container">
+      <hr>
+    </div>
+
+    <h1 class="position">공격수</h1>
+    <div class="button-container">
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Forward/julian-alvarez.webp" alt="알바레즈">        
+        <p class="playerText">19. 훌리안 알바레즈</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Forward/erling-haaland.webp" alt="홀란드">        
+        <p class="playerText">9. 엘링 홀란드</p>
+      </button>
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/Forward/riyad-mahrez.webp" alt="마레즈">        
+        <p class="playerText">26. 리야드 마레즈</p>
+      </button>
+
+    </div>
+    <div class="hr-container">
+      <hr>
+    </div>
+
+    <h1 class="position">감독</h1>
+    <div class="button-container">
+      <button class="playerBtn">
+        <img class="btnImg" src="../image/player/pep-guardiola.webp" alt="펩">        
+        <p class="playerText">펩 과르디올라</p>
+      </button>     
+    </div>
+    <div class="hr-container">
+      <hr>
+    </div>
 
 
 

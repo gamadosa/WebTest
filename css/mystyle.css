@@ -148,12 +148,14 @@ footer{
   opacity: 0; 
   transition: opacity 0.3s ease; 
 }
-
+#scrollToTopButton:hover{  
+  background-color: rgba(255,255,255,0.5);
+  filter: invert(100%);
+}
 #scrollToTopButton img {
   width: 20px; 
   height: 20px; 
 }
-
 #section{
   display:block;			    
   margin:30px auto;			
